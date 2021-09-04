@@ -31,8 +31,8 @@ ul, li {
 }
 
 h1 {
-    width: 1016px;
-    height: 56px;
+    max-width: 1016px;
+    min-height: 56px;
     font-style: normal;
     font-weight: 600;
     font-size: 48px;
@@ -46,7 +46,7 @@ h1 {
 
 .content {
     background: #4CCFAD;
-    height: 384px;
+    min-height: 384px;
     position: relative;
     margin-bottom: 16px;
 }
@@ -60,11 +60,11 @@ h1 {
 .doctor {
     position: absolute;
     min-width: auto;
+    height: 275px;
 }
 
-.dr_container {
+.main {
     display: flex;
-
 }
 
 .text_dr {
@@ -73,7 +73,7 @@ h1 {
     min-height: 64px;
 }
 
-.name_dr {
+.name_dr_dekstop {
     position: relative;
     font-weight: 600;
     font-size: 40px;
@@ -141,7 +141,7 @@ h1 {
     border-right: 1px solid #69d7ba;
 }
 
-.footer {
+.footer_dekstop {
     display: flex;
     justify-content: space-between;
 }
@@ -188,4 +188,226 @@ h1 {
 .footer_line {
     margin: 23px 24px 16px;
     border: 1px solid #E4E4E4;
+}
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 624px) {
+    .for_dekstop {
+        display: none;
+    }
+
+    .header {
+        margin-bottom: 32px;
+    }
+
+    .for_mobile {
+        font-size: 32px;
+    }
+    .name_dr_dekstop {
+        display: none;
+    }
+    .doctor_img {
+        display: none;
+    }
+
+    .container {
+        position: relative;
+
+    }
+    h1 {
+        width: auto;
+        line-height: 32px;
+    }
+    .name_dr_mobile {
+        position: relative;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 40px;
+        color: #FFF;
+    }
+
+    .main {
+        height: 532px;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .main_text {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .main_text_block {
+        width: 320px;
+        margin-bottom: 20px;
+        height: min-content;
+    }
+
+    .quotes {
+        margin-top: 24px;
+    }
+
+    .round {
+        opacity: 0.3;
+        position: absolute;
+        margin-top: 308px;
+        margin-right: 15px;
+        width: 250px;
+    }
+
+    .description {
+        width: 200px;
+    }
+
+    .footer_dekstop {
+        display: none;
+    }
+
+    .footer_mobile {
+        width: 330px;
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    .sim-slider {
+        width: auto;
+        min-width: 330px;
+        height: 260px;
+        margin: 0 auto;
+    }
+
+    .desc_container {
+        order: 1;
+        padding-left: 24px;
+    }
+
+    .dr_container {
+        order: 2;
+    }
+
+    .mobile_none {
+        display: none;
+    }
+
+    .statistics {
+        width: 320px;
+    }
+
+    .text_dr {
+        margin: 186px 0 24px 24px;
+    }
+
+    .round {
+        margin-top: 304px;
+    }
+
+
+    /* General styles */
+    .sim-slider {
+        position: relative;
+    }
+
+    .sim-slider-list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        position: relative;
+    }
+
+    .sim-slider-element {
+        width: 100%;
+        transition: opacity 1s ease-in;
+        opacity: 0;
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        display: block;
+    }
+
+    /* Navigation item styles */
+    div.sim-slider-arrow-left,
+    div.sim-slider-arrow-right {
+        cursor: pointer;
+        opacity: 0.6;
+        z-index: 4;
+    }
+
+    div.sim-slider-arrow-left {
+        left: 10px;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 24px;
+    }
+
+    div.sim-slider-arrow-right {
+        left: 10px;
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 24px;
+    }
+
+    div.sim-slider-arrow-left:hover {
+        opacity: 1.0;
+    }
+
+    div.sim-slider-arrow-right:hover {
+        opacity: 1.0;
+    }
+
+    div.sim-slider-dots {
+        width: 250px;
+        height: auto;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+        text-align: center;
+    }
+
+    span.sim-dot {
+        width: 10px;
+        height: 10px;
+        margin: 5px 7px;
+        padding: 0;
+        display: inline-block;
+        background-color: #4CCFAD;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .arrow_block {
+        display: flex;
+        position: absolute;
+        width: 100%;
+    }
+
+    .arrow {
+        margin: 40% 40%;
+    }
+
+}
+
+@media only screen
+and (min-device-width: 624px) {
+    .for_mobile {
+        display: none;
+    }
+    .name_dr_mobile {
+        display: none;
+    }
+    .doctor_mobile_img {
+        display: none;
+    }
+    .footer_mobile {
+        display: none;
+    }
 }

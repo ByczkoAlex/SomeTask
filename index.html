@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <title>smth title</title>
 </head>
 <body>
 <header class="header">
     <div class="container">
-        <h1>Trusted by dentists across the US</h1>
+        <h1 class="for_dekstop">Trusted by dentists across the US</h1>
+        <h1 class="for_mobile">Trusted by doctors all around the country</h1>
     </div>
 </header>
 
@@ -20,15 +20,19 @@
         <div>
             <img src="./assets/img/round.png" alt="round" class="round">
         </div>
-        <div class="dr_container">
-            <div class="doctor">
-                <img src="./assets/img/dr.png" alt="doctor">
+        <div class="main">
+            <div class="dr_container">
+                <div class="doctor">
+                    <img src="./assets/img/dr.png" alt="doctor" class="doctor_img">
+                    <img src="./assets/img/drMobile.png" alt="doctor" class="doctor_mobile_img">
+                </div>
+                <div class="text_dr">
+                    <h2 class="name_dr_dekstop">Dr. Geoffrey Stefko</h2>
+                    <h4 class="name_dr_mobile">Dr. Geoffrey L. Stefko</h4>
+                    <p class="description">Buckeye Dental, Cleveland Ohio</p>
+                </div>
             </div>
-            <div class="text_dr">
-                <h2 class="name_dr">Dr. Geoffrey Stefko</h2>
-                <p class="description">Buckeye Dental, Cleveland Ohio</p>
-            </div>
-            <div>
+            <div class="desc_container">
                 <div>
                     <img src="./assets/img/quotes.png" alt="quotes" class="quotes">
                 </div>
@@ -41,8 +45,8 @@
                         <p class="numbers_statistics">$70k</p>
                         <p class="text_statistics">in upfront costs saved</p>
                     </div>
-                    <div class="line">
-                        <p class="numbers_statistics">75%</p>
+                    <div class="line mobile_none">
+                        <p class="numbers_statistics ">75%</p>
                         <p class="text_statistics">faster crown delivery</p>
                     </div>
                     <div>
@@ -55,7 +59,7 @@
     </div>
 </div>
 
-<footer class="footer">
+<footer class="footer_dekstop">
     <div class="comment_block">
         <div class="comment_text">We feel spoiled with this crown quality. They have all been perfect fits</div>
         <div class="footer_line"></div>
@@ -68,7 +72,9 @@
         </div>
     </div>
     <div class="comment_block">
-        <div class="comment_text">It’s going to be a gamechanger for my practice. You offer a model that sets the bar higher for other labs.</div>
+        <div class="comment_text">It’s going to be a gamechanger for my practice. You offer a model that sets the bar
+            higher for other labs.
+        </div>
         <div class="footer_line"></div>
         <div class="man">
             <div class="photo_man"><img src="./assets/img/Chu.png" alt="Dr. Wynatte Chu"></div>
@@ -79,7 +85,9 @@
         </div>
     </div>
     <div class="comment_block">
-        <div class="comment_text">This is the greatest call I’ve had. You guys are saving me $150k. I feel like I just won the lottery!</div>
+        <div class="comment_text">This is the greatest call I’ve had. You guys are saving me $150k. I feel like I just
+            won the lottery!
+        </div>
         <div class="footer_line"></div>
         <div class="man">
             <div class="photo_man"><img src="./assets/img/Champin.png" alt="Dr. Campin"></div>
@@ -90,5 +98,67 @@
         </div>
     </div>
 </footer>
+<footer class="footer_mobile">
+    <div class="sim-slider">
+        <div class="sim-slider">
+            <ul class="sim-slider-list">
+                <!--                <li><img src="http://pvbk.spb.ru/inc/slider/imgs/no-image.gif" alt="screen"></li> &lt;!&ndash; это экран &ndash;&gt;-->
+                <li class="sim-slider-element">
+                    <div class="comment_block">
+                        <div class="comment_text">We feel spoiled with this crown quality. They have all been perfect
+                            fits
+                        </div>
+                        <div class="footer_line"></div>
+                        <div class="man">
+                            <div class="photo_man"><img src="./assets/img/Flores.png" alt="Dr. Broc Flores"></div>
+                            <div class="description_man">
+                                <p class="name_man">Dr. Broc Flores</p>
+                                <p class="job_man">Harmoni Complete Care, AT</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="sim-slider-element">
+                    <div class="comment_block">
+                        <div class="comment_text">It’s going to be a gamechanger for my practice. You offer a model that
+                            sets the bar higher for other labs.
+                        </div>
+                        <div class="footer_line"></div>
+                        <div class="man">
+                            <div class="photo_man"><img src="./assets/img/Chu.png" alt="Dr. Wynatte Chu"></div>
+                            <div class="description_man">
+                                <p class="name_man">Dr. Wynatte Chu</p>
+                                <p class="job_man">Harmoni Complete Care, AT</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="sim-slider-element">
+                    <div class="comment_block">
+                        <div class="comment_text">This is the greatest call I’ve had. You guys are saving me $150k. I
+                            feel like I just won the lottery!
+                        </div>
+                        <div class="footer_line"></div>
+                        <div class="man">
+                            <div class="photo_man"><img src="./assets/img/Champin.png" alt="Dr. Campin"></div>
+                            <div class="description_man">
+                                <p class="name_man">Dr. Campin</p>
+                                <p class="job_man">Harmoni Complete Care, AT</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="arrow_block">
+            <div class="sim-slider-arrow-left"><img src="./assets/img/left.png" alt="left" class="arrow"></div>
+            <div class="sim-slider-dots"></div>
+            <div class="sim-slider-arrow-right"><img src="./assets/img/right.png" alt="right" class="arrow"></div>
+
+        </div>
+    </div>
+    <script>new Sim()</script>
+</footer>
+<script src="./assets/js/sim-slider.js"></script>
 </body>
 </html>

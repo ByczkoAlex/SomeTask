@@ -410,10 +410,6 @@ and (min-device-width: 624px) {
     .footer_mobile {
         display: none;
     }
-    /*.comment_block {*/
-    /*    background: #FFF;*/
-    /*    width: 30%;*/
-    /*}*/
     .comment_block_champin {
         width: 30%;
         background: #FFF;
